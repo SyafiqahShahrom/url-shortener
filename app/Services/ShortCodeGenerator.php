@@ -11,7 +11,7 @@ class ShortCodeGenerator
     public const MAX_LENGTH = 8;
 
     /** Regex fragment used to constrain the redirect route. */
-    public const PATTERN = '[A-Za-z0-9]{6,8}';
+    public const PATTERN = '[A-Za-z0-9]{'.self::MIN_LENGTH.','.self::MAX_LENGTH.'}';
 
     private const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 

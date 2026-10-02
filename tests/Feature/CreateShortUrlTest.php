@@ -72,6 +72,8 @@ class CreateShortUrlTest extends TestCase
             'ftp scheme' => ['ftp://example.com/file.txt'],
             'array instead of string' => [['https://example.com']],
             'number' => [12345],
+            'embedded newline (header injection)' => ["https://example.com/\r\nSet-Cookie: session=evil"],
+            'embedded html' => ['https://example.com/"><script>alert(1)</script>'],
         ];
     }
 
