@@ -24,9 +24,4 @@ export default defineConfig({
             ignored: ['**/storage/framework/views/**'],
         },
     },
-    test: {
-        environment: 'jsdom',
-        include: ['tests/js/**/*.test.js'],
-        mockReset: true,
-    },
 });
